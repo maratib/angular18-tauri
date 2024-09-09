@@ -1,0 +1,17 @@
+<div class="flex">
+  <div class="w-80 border-r-2 max-h-full p-2">
+    <ul>
+      @for (article of articlesList; track article.id) {
+      @if (article.cat === catId) {
+      <li (click)="selectArticle(article)">{{article.title}}</li>
+      }
+      @else {
+      <li (click)="selectArticle(article)">{{article.title}}</li>
+      }
+      }
+    </ul>
+  </div>
+  <div class="p-2">
+    selected article : {{selectedArticle.title}}
+  </div>
+</div>

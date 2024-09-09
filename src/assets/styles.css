@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link {
+    @apply px-6 h-12 bg-gray-500 rounded-md border-2 border-black text-2xl antialiased font-semibold flex items-center justify-center;
+  }
+
+  :host {
+    dialog::backdrop {
+      @apply bg-neutral-900/80 backdrop-blur-sm;
+    }
+  }
+}

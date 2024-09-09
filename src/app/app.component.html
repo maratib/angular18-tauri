@@ -1,11 +1,4 @@
-<div class="px-2">
-  <h1 class="text-3xl text-red-500">Welcome to Tauri + Angular!</h1>
-
-  <p>Click on the logos to learn more about the frameworks</p>
-
-  <form class="row" (submit)="greet($event, greetInput.value)">
-    <input #greetInput id="greet-input" placeholder="Enter a name..." />
-    <button type="submit">Greet</button>
-  </form>
-  <p>{{ greetingMessage }}</p>
+<div class="h-full max-h-full bg-slate-100">
+  <app-header />
+  <app-body />
 </div>
